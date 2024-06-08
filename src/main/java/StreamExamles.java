@@ -16,9 +16,9 @@ public class StreamExamles {
         stream.forEach(System.out::println);
 
         //UC 2.2
-        List<Double> doubleList=list.stream().map(Integer->Integer.doubleValue()).toList();
+        list.stream().map(Integer->Integer.doubleValue()).toList();
         //or
-        //List<Double> doubleList=list.stream().map(Integer::doubleValue).toList();
+        //list.stream().map(Integer::doubleValue).toList();
 
 
 
