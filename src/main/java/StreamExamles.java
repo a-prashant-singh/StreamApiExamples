@@ -23,10 +23,8 @@ public class StreamExamles {
         //or
         // List<Double> douIntegerList=list.stream().map(Integer::doubleValue).toList();
 
-        //UC 2.4
-        int firstEvenNumber=list.stream().filter(n->n%2==0).peek(n-> System.out.println("Peak even number: "+n)).findFirst().orElseThrow();
-        //System.out.println(firstEvenNumber);
-
+       //UC 2.4
+        List<Integer> evenList=list.stream().filter(n->n%2==0).toList();
 
     }
 }
